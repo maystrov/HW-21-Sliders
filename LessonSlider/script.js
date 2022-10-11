@@ -8,17 +8,12 @@ function getRndInteger(min, max) {
 }
 
 function createInitialImage(number) {
-
     const image = document.createElement('img');
     image.setAttribute('src', `images/${number}.jpg` )
-    const parent = document.getElementById('main');
+    const parent = document.getElementById('slider');
     parent.appendChild(image);
-
     return image;
-    
 }
-
-
 
 function changeImages() {
     if (currentImage == max ) { 
@@ -35,16 +30,12 @@ const random = getRndInteger(min, max);
 const imageElement = createInitialImage(random);
 let currentImage = random;
 
+
+document.querySelector('.prev').addEventListener('click', changeImages)
+document.querySelector('.next').addEventListener('click', changeImages)
  
 
-// setInterval(changeImages, 1000);
 
-function createButton() {
-    const button = document.createElement('button');
-    button.textContent = 'Text'
-    document.getElementById('main').appendChild(button);
-}
 
-createButton()
-createButton()
+
 

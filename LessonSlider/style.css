@@ -1,7 +1,6 @@
 img {
-    width: 400px;
-    height:  250px;
-    position: relative;
+    width: 100%;
+    height: 250px;
 }
 
 body {
@@ -10,7 +9,12 @@ body {
 }
 
 .main {
+}
+
+#slider {
     position: relative;
+    width: 400px;
+    margin: 20% auto;
 }
 
 .arrow {
@@ -20,9 +24,7 @@ body {
     font-size: 40px;
     text-align: center;
     position: absolute;
-    top: 16%;
-    z-index: 5;
-    /* margin-left: -25px; */
+    top: 40%;
 }
 
 .arrow:hover {
@@ -30,11 +32,11 @@ body {
 }
 
 .prev {
-    left: 29%;
+    left: 5px;
 }
 
 .next {
 
-    right: 35%;
+    right: 5px;
     
 }
