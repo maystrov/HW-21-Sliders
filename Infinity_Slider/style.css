@@ -1,0 +1,45 @@
+* {
+    margin: 0;
+    padding: 0;
+    /* box-sizing: border-box; */
+    font-family: arial;
+}
+
+body {
+    background-color: rgb(28, 31, 47);
+}
+
+.slider {
+    width: 400px;
+    height: 250px; 
+    margin: 20% auto 0;
+    position: relative;
+    border: 2px solid gray;
+    /* overflow: hidden; */
+}
+
+.slide {
+    width: 400px;
+    height: 250px;
+    position: absolute;
+    transition: all 0.5s;
+    left: 0;
+    top: 0;    
+}
+
+.button-section {
+    margin-top: 20px;
+    text-align: center;
+}
+button {
+    padding: 2px 20px;
+}
+
+h2 {
+    color: #fff;
+    text-align: center;
+    font-size: 50px;
+    margin-top: 20px;
+
+}
+
